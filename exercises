@@ -37,3 +37,29 @@ def palindrome(s):
     s = s.replace(' ','')
     
     return s == s[::-1]
+
+
+
+Напишите функцию Python, которая принимает на вход строку, и вычисляет количество букв в верхнем регистре и в нижнем регистре.
+
+Пример строки : 'Hello Mr. Rogers, how are you this fine Tuesday?'
+Ожидаемый результат : 
+Количество символов в верхнем регистре (No. of Upper case characters) : 4
+Количество символов в нижнем регистре  (No. of Lower case Characters) : 33
+
+
+def up_low(s):
+
+    upper_list = []
+    lower_list = []
+    
+    for i in s:
+        
+        if i.isupper():
+            upper_list.append(i)
+        elif i.islower():
+            lower_list.append(i)
+    
+    print('Original String : ' + s)
+    print('No. of Upper case characters :  ' + str(len(upper_list)))
+    print('No. of Lower case characters :  ' + str(len(lower_list)))
