@@ -7,7 +7,7 @@ import string
 def ispangram(s):
     
     s = s.replace(' ','').lower() #убираю пробелы, привожу строку в нижний регистр
-    mylist = list(s) # задаю список из строки
+    mylist = list(s) # создаю список из строки
     myset = set(mylist) # создаю набор из списка (удаляю дубликаты)
     unset_list = list(myset) # привожу набор обратно в список
     unset_list.sort() # сортирую список по алфавиту
